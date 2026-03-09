@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Started — Free Assessment | The Barbell Saves Outpatient Center</title>
+<meta name="description" content="Contact The Barbell Saves Outpatient Center in Phoenix, AZ. Call (623) 688-6103 or fill out our free assessment form. Same-day insurance verification available.">
+<link rel="canonical" href="https://www.thebarbellsavesop.com/contact.html">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="/">
+    <img src="/logo.png" alt="Barbell Saves Logo">
+    <div class="nav-logo-text">The Barbell Saves<span>Outpatient Center</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/" id="nav-home">Home</a></li>
+    <li><a href="/programs.html" id="nav-programs">Programs</a></li>
+    <li><a href="/insurance.html" id="nav-insurance">Insurance</a></li>
+    <li><a href="/about.html" id="nav-about">About</a></li>
+    <li><a href="/blog.html" id="nav-blog">Blog</a></li>
+    <li><a href="/contact.html" id="nav-contact" class="nav-cta">Get Started</a></li>
+  </ul>
+  <button class="nav-toggle" onclick="toggleNav()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mob-nav" id="mobNav">
+  <a href="/">Home</a>
+  <a href="/programs.html">Programs &amp; Services</a>
+  <a href="/insurance.html">Insurance</a>
+  <a href="/about.html">About Us</a>
+  <a href="/blog.html">Blog</a>
+  <a href="/contact.html">Get Started — Free Assessment</a>
+</div>
+
+  <div class="ph">
+    <div class="ph-photo"><img src="/images/contact-1.jpg" alt="Barbell Saves outpatient center reception Phoenix AZ" style="" loading="lazy"></div>
+    <div class="ph-grid"></div>
+    <div class="phi">
+      <div class="ey ey-w">We're Here</div>
+      <h1>Get Started <em>Today</em></h1>
+      <p>Call us, text us, or fill out the form. A real person responds — usually the same day.</p>
+    </div>
+  </div>
+
+  <section class="sec bg-wh">
+    <div class="si two" style="gap:56px;align-items:start">
+      <div>
+        <div class="ey">Send Us a Message</div>
+        <h2 class="st" style="margin-bottom:28px">Book a <em>Free Assessment</em></h2>
+        <form id="contactForm" action="https://formspree.io/f/xwvrvkdr" method="POST" onsubmit="submitForm(event)">
+          <div class="fgrid">
+            <div class="fg"><label for="fname">First Name *</label><input type="text" id="fname" name="fname" placeholder="First name" required></div>
+            <div class="fg"><label for="lname">Last Name *</label><input type="text" id="lname" name="lname" placeholder="Last name" required></div>
+            <div class="fg"><label for="phone">Phone *</label><input type="tel" id="phone" name="phone" placeholder="(623) 000-0000" required></div>
+            <div class="fg"><label for="email">Email *</label><input type="email" id="email" name="email" placeholder="you@email.com" required></div>
+            <div class="fg full"><label for="service">How can we help?</label>
+              <select id="service" name="service">
+                <option value="">Select a service...</option>
+                <option>Intensive Outpatient Program (IOP)</option>
+                <option>Adult Outpatient Program</option>
+                <option>Core 24 — Teen Program (Ages 13–17)</option>
+                <option>Individual Counseling</option>
+                <option>Family Counseling</option>
+                <option>PCP / Primary Care Visit</option>
+                <option>Psychiatric Evaluation / Medication Management</option>
+                <option>Insurance Verification</option>
+                <option>Physical Therapy (Coming Soon — Notify Me)</option>
+                <option>Not sure — I need guidance</option>
+              </select>
+            </div>
+            <div class="fg full"><label for="insurance">Insurance Plan</label>
+              <select id="insurance" name="insurance">
+                <option value="">Select insurance...</option>
+                <option>Banner Health</option>
+                <option>Health Choice AZ (AHCCCS)</option>
+                <option>AZ Complete Health (AHCCCS)</option>
+                <option>Aetna</option>
+                <option>Optum</option>
+                <option>Blue Cross Blue Shield (BCBSAZ)</option>
+                <option>Medicare</option>
+                <option>American Indian Health Plan (AIHP)</option>
+                <option>UHC Community Plan</option>
+                <option>Self-Pay / No Insurance</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="fg full"><label for="message">Message (optional)</label><textarea id="message" name="message" placeholder="Tell us a little about what you're looking for, or ask us anything..."></textarea></div>
+            <div class="fg full">
+              <button type="submit" class="btn btn-teal" style="width:100%;justify-content:center;font-size:16px;padding:16px 28px">Send Message — We'll Respond Same Day</button>
+              <div class="fnote">&#128274; Your information is 100% confidential and HIPAA protected. We will never share your information without your written consent.</div>
+            </div>
+          </div>
+        </form>
+        <div id="formSuccess" style="display:none;background:var(--pale);border:1px solid var(--teal);border-radius:6px;padding:28px;text-align:center;margin-top:20px">
+          <div style="font-size:40px;margin-bottom:12px">&#10003;</div>
+          <div style="font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:900;text-transform:uppercase;color:var(--td);margin-bottom:8px">Message Sent!</div>
+          <p style="font-size:14px;color:var(--gray)">Thank you — we'll be in touch usually within the same business day. If you need immediate help, please call <a href="tel:6236886103" style="color:var(--teal);font-weight:600">(623) 688-6103</a>.</p>
+        </div>
+      </div>
+      <div>
+        <div class="cicard">
+          <h3>Prefer to Call?</h3>
+          <a href="tel:6236886103" class="big-phone">(623) 688-6103</a>
+          <p>Mon–Fri, 8 AM–5 PM<br>IOP sessions: Mon–Thu, 4–7 PM</p>
+          <a href="sms:6236886103" class="btn btn-wh btn-sm">&#128172; Text Us</a>
+        </div>
+        <div style="background:var(--lgray);border-radius:6px;padding:24px;margin-bottom:20px">
+          <div style="font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:800;text-transform:uppercase;color:var(--ch);margin-bottom:12px">&#128205; Location</div>
+          <p style="font-size:14px;color:var(--gray);line-height:1.9">11042 N 24th Ave, Suite 102<br>Phoenix, AZ 85029</p>
+        </div>
+        <div class="nsteps">
+          <h4>What Happens Next</h4>
+          <div class="nsi"><div class="nsn">1</div><div>We respond same business day</div></div>
+          <div class="nsi"><div class="nsn">2</div><div>Free insurance verification &amp; clinical assessment</div></div>
+          <div class="nsi"><div class="nsn">3</div><div>Start within 24–48 hours if you're ready</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<footer>
+  <div class="fi">
+    <div class="ftop">
+      <div>
+        <img src="/logo.png" alt="The Barbell Saves Outpatient Center" class="flogo">
+        <div class="fbrand">The <span>Barbell Saves</span> Outpatient Center</div>
+        <p class="ftag">Phoenix's only medically licensed integrated wellness and outpatient treatment center. Gym + clinic, under one roof.</p>
+        <span class="lic">&#127973; Licensed OTC-77 &nbsp;&middot;&nbsp; Arizona DBHS</span>
+      </div>
+      <div>
+        <div class="fct">Programs</div>
+        <ul class="flinks">
+          <li><a href="/programs.html">Adult IOP</a></li>
+          <li><a href="/programs.html">Outpatient Program</a></li>
+          <li><a href="/programs.html">Core 24 (Teens)</a></li>
+          <li><a href="/programs.html">PCP &amp; Psych Visits</a></li>
+          <li><a href="/programs.html">Physical Therapy (Soon)</a></li>
+          <li><a href="/programs.html">Family Counseling</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="fct">Insurance</div>
+        <ul class="flinks">
+          <li><a href="/insurance.html">AHCCCS / Medicaid</a></li>
+          <li><a href="/insurance.html">Banner Health</a></li>
+          <li><a href="/insurance.html">Aetna / Optum</a></li>
+          <li><a href="/insurance.html">Blue Cross Blue Shield</a></li>
+          <li><a href="/insurance.html">Verify My Benefits</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="fct">Contact</div>
+        <ul class="flinks">
+          <li><a href="tel:6236886103">(623) 688-6103</a></li>
+          <li><a href="https://www.thebarbellsavesop.com">thebarbellsavesop.com</a></li>
+          <li><a>11042 N 24th Ave, Ste 102</a></li>
+          <li><a>Phoenix, AZ 85029</a></li>
+          <li style="margin-top:14px"><a href="/contact.html" class="btn btn-teal btn-sm" style="color:#fff">Get Started</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>&copy; 2025 The Barbell Saves Outpatient Center &nbsp;&middot;&nbsp; All rights reserved</span>
+      <span>Privacy Policy &nbsp;&middot;&nbsp; HIPAA Notice &nbsp;&middot;&nbsp; Accessibility</span>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
