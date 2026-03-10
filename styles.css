@@ -77,6 +77,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;height:72px;display:flex;ali
 
 /* SECTIONS */
 .sec{padding:88px 72px}.sec-sm{padding:64px 72px}
+.sec p+p{margin-top:18px}
 .si{max-width:1200px;margin:0 auto}
 .bg-wh{background:#fff}.bg-lg{background:var(--lgray)}.bg-pale{background:var(--pale)}
 .bg-teal{background:var(--teal)}.bg-dk{background:var(--dark)}.bg-ch{background:var(--ch)}
