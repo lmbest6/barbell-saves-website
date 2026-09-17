@@ -1,3 +1,6 @@
+function trackEvent(name,params){
+  if(typeof gtag==='function')gtag('event',name,params||{});
+}
 function toggleNav(){document.getElementById('mobNav').classList.toggle('open');}
 function toggleFaq(btn){
   const ans=btn.nextElementSibling;
@@ -19,6 +22,7 @@ async function submitForm(e){
     if(res.ok){
       form.style.display='none';
       document.getElementById('formSuccess').style.display='block';
+      trackEvent('generate_lead',{form_id:'contact',page_path:window.location.pathname});
     } else {
       btn.textContent='Error — Please Try Again';
       btn.disabled=false;
@@ -40,6 +44,7 @@ async function submitPTForm(e){
     if(res.ok){
       form.style.display='none';
       document.getElementById('ptSuccess').style.display='block';
+      trackEvent('generate_lead',{form_id:'pt_waitlist',page_path:window.location.pathname});
     } else {
       btn.textContent='Error — Try Again';
       btn.disabled=false;
@@ -53,6 +58,10 @@ async function submitPTForm(e){
 document.addEventListener('click',function(e){
   const nav=document.getElementById('mobNav');const tog=document.querySelector('.nav-toggle');
   if(nav.classList.contains('open')&&!nav.contains(e.target)&&!tog.contains(e.target))nav.classList.remove('open');
+  const telLink=e.target.closest('a[href^="tel:"]');
+  if(telLink){trackEvent('phone_click',{link_url:telLink.getAttribute('href'),page_path:window.location.pathname});return;}
+  const smsLink=e.target.closest('a[href^="sms:"]');
+  if(smsLink){trackEvent('text_click',{link_url:smsLink.getAttribute('href'),page_path:window.location.pathname});}
 });
 (function(){
   const path=window.location.pathname;
